@@ -31,7 +31,6 @@ public class FoodTruck implements Serializable {
 
     public void print() {
         System.out.format("%10s%10s\n", "Name:" + getName(), " || Location: " + getLocation());
-//        System.out.println("Name:"+getName()+" Location:"+getLocation());
     }
 
 }

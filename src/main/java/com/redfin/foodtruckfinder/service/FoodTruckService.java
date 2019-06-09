@@ -27,8 +27,6 @@ public class FoodTruckService {
     @Value("${food-truck-url}")
     private String baseFoodTruckURL;
 
-    //private String BASE_FOOD_TRUCK_URL_LIST = "https://data.sfgov.org/resource/jjew-r69b.json";
-
 
     /**
      * Get current available food trucks
