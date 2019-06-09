@@ -47,6 +47,8 @@ public class FoodTruckFinderApplication implements CommandLineRunner {
             int maxItems = (listSize.intValue() - 1);
             printPage(currentPageIndex,pages,maxItems);
             promptUser(currentPageIndex,maxPageIndex,maxItems);
+        } else {
+            foodTrucks.forEach(FoodTruck::print);
         }
     }
 
