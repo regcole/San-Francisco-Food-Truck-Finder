@@ -10,7 +10,7 @@ Outputs a list of current food trucks that are open (at time program is ran) in 
 
 1. Navigate to root of folder
   ```shell
-     */SpringFoodTruckFinder
+     cd */SpringFoodTruckFinder
    ```
      
 2. Run `Maven` install
