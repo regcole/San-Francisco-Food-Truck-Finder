@@ -34,6 +34,10 @@ public class FoodTruckFinderApplication implements CommandLineRunner {
     @Override
     public void run(String... args) {
         foodTrucks = foodTruckService.getCurrentlyAvailableFoodTrucks();
+        if (foodTrucks.isEmpty()) {
+            System.out.println("There are 0 Food Trucks available at this time");
+            return;
+        }
         Double listSize = Double.valueOf((foodTrucks.size()));
         int pages = new Double(Math.ceil(listSize / 10)).intValue();
         if (pages > 1) {
